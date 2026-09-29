@@ -4,18 +4,15 @@ server:
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/order_db
-
-app:
-  message: Hello, I'm Order Service.
-
-# We want that call to pass through a Circuit Breaker.
-spring:
   cloud:
     openfeign:
       circuitbreaker:
         enabled: true
         alphanumeric-ids:
           enabled: true
+
+app:
+  message: Hello, I'm Order Service.
 
 resilience4j:
   circuitbreaker:

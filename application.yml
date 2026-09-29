@@ -25,4 +25,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,busrefresh
+        include: health,info,busrefresh,circuitbreakers,circuitbreakerevents
+  endpoint:
+    health:
+      show-details: always

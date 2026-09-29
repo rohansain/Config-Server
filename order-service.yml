@@ -12,7 +12,7 @@ spring:
           enabled: true
 
 app:
-  message: Hello, I'm Order Service.
+  message: Hello, I'm Order Service!
 
 resilience4j:
   circuitbreaker:

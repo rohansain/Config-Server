@@ -8,6 +8,7 @@ spring:
 app:
   message: Hello, I'm Order Service.
 
+# We want that call to pass through a Circuit Breaker.
 spring:
   cloud:
     openfeign:

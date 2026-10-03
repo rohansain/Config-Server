@@ -24,3 +24,9 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 3
+
+spring:
+  cloud:
+    openfeign:
+      micrometer:
+        enabled: true
